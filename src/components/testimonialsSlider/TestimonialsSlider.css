@@ -1,0 +1,124 @@
+.container {  
+    width: 100%;
+    max-width: 1170px;  
+    margin: auto;  
+  }  
+  
+  .testimonials {  
+    width: 50%;
+    height: 70vh;
+    background: linear-gradient(to right, #f2ad8a, #e3e3e3);    align-items: center; /* مرکز کردن عمودی محتوا */
+    justify-content: center; /* مرکز کردن افقی محتوا */
+    position: fixed; /* اضافه کردن برای موقعیت دهی */
+    top: 50%; /* قرار دادن وسط صفحه */
+    left: 50%; /* قرار دادن وسط صفحه */
+    transform: translate(-50%, -50%); /* مرکز کردن دقیق محتوا */
+
+  }
+  
+  .testimonials .title {  
+    text-align: center;  
+    color: #fff;  
+    font-size: 20px;  
+    margin-bottom: 30px;  
+  }  
+  
+  .slider {  
+    border: 1px solid #333;  
+    color: #702b29d3;
+    padding: 5%;  
+    width: 80%;  
+    height: 55%;  
+    text-align: center;  
+    margin: auto;
+    margin-top: 4%;  
+  }  
+  
+  .slider .slide {  
+    width: 100%;  
+    display: none;  
+  }  
+  
+  .slider .slide.active {  
+    display: block;  
+    animation: slide 1s ease;  
+    -webkit-animation: slide 1s ease;  
+  }  
+  
+  @keyframes slide {  
+    0% {  
+      opacity: 0;  
+      transform: translateX(-15px);  
+    }  
+    100% {  
+      opacity: 1;  
+      transform: translateX(0);  
+    }  
+  }  
+  
+  .slider .slide p {  
+    font-size: 18px;  
+    word-spacing: 2px;  
+
+  }  
+  h3{
+    margin-top: 7%;
+  }
+  .slider .slide .client-info h3 {  
+    font-size: 18px;  
+    margin: 60px 0 10px 0;  
+  }  
+  
+  .slider .slide .client-info span {  
+    color: #11bead;  
+    font-size: 14px;  
+  }  
+  
+  .slider-indicator {  
+    padding-top: 30px;  
+    text-align: center;  
+  }  
+  
+  .slider-indicator img {  
+    width: 80px;  
+    height: 80px;  
+    border-radius: 50%;  
+    margin: 0 8px;  
+    cursor: pointer;  
+    opacity: 0.2;  
+    border: 5px solid #fff;  
+    transition: opacity 0.3s;  
+  }  
+  
+  .slider-indicator img.active {  
+    opacity: 1;  
+  }
+  
+  /* Media queries برای ریسپانسیو کردن */
+  @media (max-width: 768px) {
+    .testimonials {
+      width: 90%;
+      height: 50vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .slider {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+    }
+  
+   
+  
+    .slider .slide .client-info h3 {
+      font-size: 16px;
+    }
+  
+    .slider-indicator img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  

@@ -1,0 +1,171 @@
+* {  
+    padding: 0;  
+    margin: 0;  
+}  
+
+body {  
+    font-family: 'vazir';  
+    direction: rtl;  
+    height: 100vh;  
+}  
+
+.mobile-text {  
+    display: none;  
+}  
+
+section {  
+    width: 100%;  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center; /* اصلاح اینجا به justify-content */  
+    position: relative; /* اضافه کردن position */  
+}  
+
+.container {  
+    width: 90%;  
+    max-width: 1200px;  
+    display: flex;  
+    align-items: flex-start;  
+    justify-content: center;  
+    height: 100%;  
+    flex-direction: column;  
+    margin: 0 auto;  
+
+}
+
+
+.bg {  
+    position: absolute;  
+    top: 0;  
+    right: 0;  
+    width: 100%;  
+    height: 100%;  
+    overflow: hidden;  
+    z-index: -1;  
+    background-color: black;  
+}  
+
+.bg::after {  
+    content: '';  
+    position: absolute;  
+    top: 0;  
+    right: 0;  
+    width: 100%;  
+    height: 100%;  
+    background: rgba(0, 0, 0, .5);  
+}  
+
+.bg img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    display: none; /* پنهان کردن تصاویر به طور پیش‌فرض */  
+}  
+
+.bg img.id-1 {  
+    display: block; /* نمایش نخستین تصویر به صورت پیش‌فرض */  
+}  
+
+a {  
+    text-decoration: none;  
+    color: whitesmoke;  
+}  
+
+h1 {  
+    font-size: xx-large;
+
+    font-size: 40px;  
+    display: flex;  
+    align-items: flex-start;  
+    color: whitesmoke;  
+    position: relative;  
+}  
+h2 {  
+    position: absolute; /* برای استفاده از translate */  
+    top: 30%; /* درصد 50 از بالا */  
+    left: 50%; /* درصد 50 از چپ */  
+    transform: translate(-50%, -50%); /* جابجایی به مرکز */  
+}
+.container h1 span {  
+    
+    margin-right: 0%;  
+}  
+
+#line {  
+    position: absolute;  
+    left: 0;  
+    bottom: -15px;  
+    height: 10px;  
+    width: 150px;  
+    border: 5px solid rgb(0, 102, 255);  
+    pointer-events: none;  
+    z-index: 1; /* تغییر z-index خط */  
+    transition: all .5s ease;  
+}  
+
+@keyframes animate {  
+    0% {  
+        opacity: .5;  
+        transform: scale(1);  
+    }  
+    100% {  
+        opacity: 1;  
+        transform: scale(1.1);  
+    }  
+}  
+
+.text {  
+    position: absolute; /* برای استفاده از translate */  
+    top: 50%; /* درصد 50 از بالا */  
+    left: 50%; /* درصد 50 از چپ */  
+    transform: translate(-50%, -50%); /* جابجایی به مرکز */  
+cursor: pointer;
+}
+.shopname a h2{
+        font-size: 3.8em;
+        margin-bottom: 4%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        color: #d75450d3;
+}
+
+
+.text h1 {  
+    gap: 25px; /* فاصله کمتر برای صفحات کوچک‌تر */  
+} 
+
+
+
+@media screen and (max-width: 968px) {  
+   
+    .mobile-text {  
+        display: none;  
+    }  
+    .text {  
+        display: block;  
+    }  
+    #line {  
+        display: block; /* مخفی کردن خط در حالت موبایل */  
+    } 
+    .shopname a h2{
+        font-size: 2.0em;
+        margin-bottom: 1%;
+} 
+}
+.text h1 {  
+    display: flex; /* استفاده از flexbox */  
+    justify-content: center; /* مرکز‌گذاری افقی */  
+    gap: 90px; /* فاصله ثابت بین هر عنصر */  
+}  
+
+@media (max-width: 768px) {  
+    .text h1 {  
+        gap: 25px; /* فاصله کمتر برای صفحات کوچک‌تر */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .text h1 {  
+        gap: 3px; /* فاصله کمتر برای موبایل */  
+    }  
+}

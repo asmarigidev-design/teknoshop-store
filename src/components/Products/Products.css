@@ -1,0 +1,44 @@
+.basket {
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center; /* اضافه کردن برای مرکز کردن عمودی محتوا */
+  gap: 20px; /* فاصله بین آیکون‌ها */
+  padding-top: 20px;
+  background: linear-gradient(to right, #f2ad8a, #e3e3e3);}
+
+.basket-icon {
+  font-size: 40px;
+  color: #ed4c0cb5;
+  position: relative; /* اضافه کردن برای موقعیت‌دهی .basket-count */
+}
+.basket-icon:hover {
+color: #9d3106;
+}
+.basket-count {
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  background: #ff0400;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+  transform: translate(-50%, -50%); /* مرکز کردن .basket-count نسبت به آیکون */
+}
+
+.cart-link {
+  position: relative; /* اطمینان از اینکه .basket-count به آیکون چسبیده بماند */
+}
+
+/* Media queries برای ریسپانسیو کردن */
+@media (max-width: 768px) {
+  .basket-icon {
+    font-size: 30px;
+  }
+
+  .basket-count {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+}

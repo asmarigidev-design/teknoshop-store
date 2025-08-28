@@ -1,0 +1,49 @@
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+
+.custom-close-button {
+  position: fixed;
+  top: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+.custom-close-button:hover {
+ 
+  color: rgb(255, 249, 249);
+}
+
+
+/* Media queries برای ریسپانسیو کردن */
+@media (max-width: 768px) {
+  .custom-modal-content {
+    width: 80%;
+    height: 60%;
+  }
+  .custom-close-button {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
