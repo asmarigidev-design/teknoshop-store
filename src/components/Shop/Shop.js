@@ -15,7 +15,7 @@ const Shop = () => {
         <header className="shop-header">  
           {/* قرار دادن آیکون در بالای عنوان | Display icon above title */}  
           <div style={{ textAlign: 'center', marginBottom: '20px' }}>  
-            <a href='/'> <FaHome size={40} color="#d9534f" /> </a>
+<Link to="/"> <FaHome size={40} color="#d9534f" /> </Link>
           </div>  
 
           {/* عنوان فروشگاه | Shop title */}
