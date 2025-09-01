@@ -16,7 +16,6 @@ const Cart = () => {
   // خروجی کامپوننت | Component return
   return (
     <div className="cart-container">
-      <h1>سبد خرید</h1>
 
       {/* بررسی خالی بودن سبد خرید | Check if cart is empty */}
       {cart.length === 0 ? (
