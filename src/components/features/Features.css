@@ -156,12 +156,21 @@ h2 {
 }  
 
 @media (max-width: 768px) {  
+    #line {
+display:block;
+}
     .text h1 {  
         gap: 25px; /* فاصله کمتر برای صفحات کوچک‌تر */  
     }  
+    #line {
+display:none;
+}
 }  
 
 @media (max-width: 500px) {  
+    #line {
+display:none;
+}
     .text h1 {  
         gap: 3px; /* فاصله کمتر برای موبایل */  
         font-size: 1.5em;
@@ -178,10 +187,25 @@ h2 {
 
 }   
 #line {
-    bottom: -18px;
-    height: 3px;
-    width: 35px;
-    border: 3px solid rgb(0, 102, 255);
-   
+display:none;
 }
 }
+@media (min-width: 250px) and (max-width: 350px) { 
+.text h1 {  
+gap: 1px;   
+font-size: 1.5em;
+
+}
+.container h1 span {
+margin-right: 20px;
+}
+.shopname a h2{
+font-size: 1rem;
+overflow-wrap: break-word;
+word-break: break-word;
+
+} 
+#line {
+display:none;
+}
+     }

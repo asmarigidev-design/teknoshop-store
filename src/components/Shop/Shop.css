@@ -147,7 +147,7 @@
 
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 300px) {
   .shop-header h1 {
     font-size: 1.4em;
     line-height: 1.4;
@@ -165,19 +165,6 @@
     padding-bottom: 90%; /* کاهش فاصله پایین */  
 
   }
-
-  .shop-header {
-    padding: 10px;
-    height: auto; /* جلوگیری از فشار ارتفاع ثابت */
-  }
-
-  .shop-container {
-    padding: 20px;
-  }
-
-  ul li {
-    font-size: 0.9em;
-    padding: 8px;
-  }
-
+ 
 }
+

@@ -28,7 +28,6 @@ const Shop = () => {
 
         {/* بخش معرفی محصولات | Product categories section */}
         <section className="shop-info">  
-          <h2>محصولات ما</h2>  
           <ul>  
             <li>
               <Link to="/desktop">
