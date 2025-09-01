@@ -33,15 +33,34 @@ const Cart = () => {
                 <p className='tedad'>تعداد: {product.quantity}</p>
 
                 {/* دکمه افزایش تعداد | Increase quantity button */}
-                <button onClick={() => addToCart(product)}>+</button>
+ <button onClick={() => addToCart(product)}>+</button>
 
-                {/* دکمه کاهش تعداد و هشدار حذف | Decrease quantity and delete alert */}
-                <button onClick={() => {
-                  removeFromCart(product);
-                  if (product.quantity === 1) {
-                    alert('آیا از حذف مطمئن هستید؟');
-                  }
-                }}>-</button>
+{/* دکمه کاهش تعداد و هشدار حذف */}
+<button className="remove-btn" onClick={() => {
+  if (product.quantity === 1) {
+    const confirmBox = document.getElementById('confirm-delete');
+    if (confirmBox) {
+      confirmBox.style.display = 'block';
+    }
+  } else {
+    removeFromCart(product);
+  }
+}}>
+  -
+</button>
+
+{/* کادر تأیید حذف */}
+<div id="confirm-delete" className="confirm-box">
+  <p>آیا از حذف مطمئن هستید؟</p>
+  <button className="confirm-btn" onClick={() => {
+    removeFromCart(product);
+    document.getElementById('confirm-delete').style.display = 'none';
+  }}>
+    بله
+  </button>
+</div>
+
+
               </div>
             </div>
           ))}

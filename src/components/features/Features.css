@@ -53,18 +53,18 @@ section {
     right: 0;  
     width: 100%;  
     height: 100%;  
-    background: rgba(0, 0, 0, .5);  
+    background: rgba(0, 0, 0, 0.27);  
 }  
 
 .bg img {  
     width: 100%;  
     height: 100%;  
     object-fit: cover;  
-    display: none; /* پنهان کردن تصاویر به طور پیش‌فرض */  
+    display: none;
 }  
 
 .bg img.id-1 {  
-    display: block; /* نمایش نخستین تصویر به صورت پیش‌فرض */  
+    display: block; 
 }  
 
 a {  
@@ -74,7 +74,6 @@ a {
 
 h1 {  
     font-size: xx-large;
-
     font-size: 40px;  
     display: flex;  
     align-items: flex-start;  
@@ -82,10 +81,10 @@ h1 {
     position: relative;  
 }  
 h2 {  
-    position: absolute; /* برای استفاده از translate */  
-    top: 30%; /* درصد 50 از بالا */  
-    left: 50%; /* درصد 50 از چپ */  
-    transform: translate(-50%, -50%); /* جابجایی به مرکز */  
+    position: absolute; 
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%, -50%);   
 }
 .container h1 span {  
     
@@ -100,7 +99,7 @@ h2 {
     width: 150px;  
     border: 5px solid rgb(0, 102, 255);  
     pointer-events: none;  
-    z-index: 1; /* تغییر z-index خط */  
+    z-index: 1; 
     transition: all .5s ease;  
 }  
 
@@ -116,11 +115,11 @@ h2 {
 }  
 
 .text {  
-    position: absolute; /* برای استفاده از translate */  
-    top: 50%; /* درصد 50 از بالا */  
-    left: 50%; /* درصد 50 از چپ */  
-    transform: translate(-50%, -50%); /* جابجایی به مرکز */  
-cursor: pointer;
+    position: absolute; 
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
 }
 .shopname a h2{
         font-size: 3.8em;
@@ -131,7 +130,7 @@ cursor: pointer;
 
 
 .text h1 {  
-    gap: 25px; /* فاصله کمتر برای صفحات کوچک‌تر */  
+    gap: 25px;  
 } 
 
 
@@ -144,9 +143,7 @@ cursor: pointer;
     .text {  
         display: block;  
     }  
-    #line {  
-        display: block; /* مخفی کردن خط در حالت موبایل */  
-    } 
+   
     .shopname a h2{
         font-size: 2.0em;
         margin-bottom: 1%;
@@ -164,8 +161,27 @@ cursor: pointer;
     }  
 }  
 
-@media (max-width: 480px) {  
+@media (max-width: 500px) {  
     .text h1 {  
         gap: 3px; /* فاصله کمتر برای موبایل */  
-    }  
+        font-size: 1.5em;
+
+    }
+    .container h1 span {
+    margin-right: 20px;
+}
+       .shopname a h2{
+     font-size: 1.5em;
+     margin-bottom: 1%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+}   
+#line {
+    bottom: -18px;
+    height: 3px;
+    width: 35px;
+    border: 3px solid rgb(0, 102, 255);
+   
+}
 }

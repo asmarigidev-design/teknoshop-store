@@ -5,6 +5,7 @@
   }  
   
   .testimonials {  
+    border-radius: 10px;  
     width: 50%;
     height: 70vh;
     background: linear-gradient(to right, #f2ad8a, #e3e3e3);    align-items: center; /* مرکز کردن عمودی محتوا */
@@ -24,8 +25,7 @@
   }  
   
   .slider {  
-    border: 1px solid #333;  
-    color: #702b29d3;
+   color: #583812e9;  
     padding: 5%;  
     width: 80%;  
     height: 55%;  
@@ -63,15 +63,12 @@
   }  
   h3{
     margin-top: 7%;
+    font-size: 20px;  
+
   }
   .slider .slide .client-info h3 {  
     font-size: 18px;  
     margin: 60px 0 10px 0;  
-  }  
-  
-  .slider .slide .client-info span {  
-    color: #11bead;  
-    font-size: 14px;  
   }  
   
   .slider-indicator {  

@@ -8,7 +8,7 @@
     padding: 40px; /* ایستادگی از بالا */  
   }  
   .shop-background section {
-height: 70vh;
+   height: 70vh;
 
   }
   .shop-container {  
@@ -119,4 +119,65 @@ height: 70vh;
         padding-bottom: 50%; /* کاهش فاصله پایین */  
 
     }  
+}
+@media (max-width: 500px) {
+  .shop-header h1 {
+    font-size: 1.6em; /* کاهش سایز برای موبایل */
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 10px; /* جلوگیری از چسبیدن به لبه‌ها */
+    overflow-wrap: break-word; /* شکستن متن در صورت نیاز */
+  }
+
+  .shop-features h2,
+  .shop-experience h2 {
+    font-size: 1.2em;
+    padding-bottom: 20px; /* مقدار منطقی‌تر برای فاصله پایین */
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+  .shop-header {
+    padding: 10px;
+  }
+    .shop-info h2 {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    overflow-wrap: break-word;
+    padding-bottom: 80%; /* کاهش فاصله پایین */  
+
+  }
+}
+@media (max-width: 350px) {
+  .shop-header h1 {
+    font-size: 1.4em;
+    line-height: 1.4;
+    padding: 0 12px;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .shop-info h2,
+  .shop-features h2,
+  .shop-experience h2 {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    overflow-wrap: break-word;
+    padding-bottom: 90%; /* کاهش فاصله پایین */  
+
+  }
+
+  .shop-header {
+    padding: 10px;
+    height: auto; /* جلوگیری از فشار ارتفاع ثابت */
+  }
+
+  .shop-container {
+    padding: 20px;
+  }
+
+  ul li {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
 }

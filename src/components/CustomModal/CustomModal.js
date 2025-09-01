@@ -1,7 +1,6 @@
 // ایمپورت کتابخانه‌های مورد نیاز | Import necessary libraries
 import React from 'react';
 import './CustomModal.css'; // وارد کردن فایل استایل | Import CSS file
-import { FaTimes } from 'react-icons/fa'; // وارد کردن آیکون بستن | Import close icon
 
 // تعریف کامپوننت CustomModal | Define CustomModal component
 const CustomModal = ({ showModal, setShowModal, product, children }) => {
@@ -28,10 +27,7 @@ const CustomModal = ({ showModal, setShowModal, product, children }) => {
           children
         )}
 
-        {/* دکمه بستن مودال | Close modal button */}
-        <button className="custom-close-button" onClick={() => setShowModal(false)}>
-          <FaTimes />
-        </button>
+      
       </div>
     </div>
   );

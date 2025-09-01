@@ -21,9 +21,7 @@ const OriginalModal = ({ showModal, setShowModal, product }) => {
           <FaTimes />  
         </button>  
 
-        {/* عنوان محصول | Product title */}
-        <h2>{product.title}</h2>  
-
+      
         {/* تصویر محصول | Product image */}
         <img src={product.images[0]} alt={product.title} className="modal-image" />  
 

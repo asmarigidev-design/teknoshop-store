@@ -28,10 +28,11 @@
 }
 
 .modal-content h2 {
-  position: absolute; /* برای استفاده از translate */  
-  top: 59%; /* درصد 50 از بالا */  
-  left: 50%; /* درصد 50 از چپ */  
-  transform: translate(-50%, -50%); /* جابجایی به مرکز */    font-size: 24px;
+  position: absolute; 
+  top: 59%; 
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  font-size: 24px;
   color: #333;
 }
 
@@ -67,7 +68,7 @@
 }
 
 .close-button:hover {
-  color: #333;
+  color: #c8c4c4e1;
 }
 
 @keyframes fadeIn {
@@ -83,4 +84,16 @@
   to {
     transform: translateY(0);
   }
+}
+
+@media (max-width: 480px) {  
+.modal-content p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+h3 {
+    margin: 3px;
+    margin: 10px;
+    font-size: 15px;
+}
 }

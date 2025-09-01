@@ -1,7 +1,6 @@
 // ایمپورت کتابخانه‌ها و فایل‌های مورد نیاز | Import required libraries and files
 import React from 'react';  
 import './Shop.css'; // فایل CSS ماژول | Import CSS module
-import { FaHome } from 'react-icons/fa'; // وارد کردن آیکون | Import icon
 import { Link } from 'react-router-dom'; // لینک‌دهی داخلی | Internal routing
 
 // تعریف کامپوننت Shop | Define Shop component
@@ -14,12 +13,11 @@ const Shop = () => {
         {/* هدر فروشگاه | Shop header */}
         <header className="shop-header">  
           {/* قرار دادن آیکون در بالای عنوان | Display icon above title */}  
-          <div style={{ textAlign: 'center', marginBottom: '20px' }}>  
-<Link to="/"> <FaHome size={40} color="#d9534f" /> </Link>
-          </div>  
-
-          {/* عنوان فروشگاه | Shop title */}
+          <div>  
+              <Link to="/"> {/* عنوان فروشگاه | Shop title */}
           <h1>فروشگاه آنلاین تکنو دیجیتال</h1>  
+              </Link>
+          </div>  
 
           {/* توضیحات فروشگاه | Shop description */}
           <p>  
