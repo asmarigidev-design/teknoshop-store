@@ -44,6 +44,14 @@
     justify-content: center; /* مرکز‌گذاری عمودی */  
     height: 33vh; /* ارتفاع 100% از ارتفاع صفحه */  
 }  
+.tit{
+    display: flex; /* استفاده از flexbox */  
+    align-items: center; /* مرکز‌گذاری افقی */  
+    justify-content: center;
+        color: #d75450d3; 
+        padding:20px; 
+
+}
 
 .shop-header h1 {  
     font-size: 2.8em;  
@@ -60,20 +68,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
     transition: transform 0.3s; /* انیمیشن جابجایی */  
   }  
-  
+  .shop-experience {  
+    flex-direction: column; /* چیدمان عمودی */  
+    align-items: center; /* مرکز‌گذاری افقی */  
+    justify-content: center; /* مرکز‌گذاری عمودی */  
+  }
   .shop-info:hover,   
   .shop-features:hover,   
   .shop-experience:hover {  
     transform: translateY(-5px); /* حرکت به سمت بالا هنگام هاور */  
   }  
   
-  .shop-info h2,   
-  .shop-features h2,   
-  .shop-experience h2 {  
-    color: #d9534f;  
-    font-size: 1.8em;  
-    padding-bottom: 15%;  
-  }  
+ 
   
   ul {  
     list-style: none; /* حذف علامت لیست */  
@@ -104,21 +110,11 @@
 
 /* Media Queries برای صفحه‌های کوچک‌تر */  
 @media (max-width: 868px) {  
-    .shop-info h2,  
-    .shop-features h2,  
-    .shop-experience h2 {  
-        padding-bottom: 30%; /* کاهش فاصله پایین */  
-    }  
+ 
 }  
 
 @media (max-width: 500px) {  
-    .shop-info h2,  
-    .shop-features h2,  
-    .shop-experience h2 {  
-        font-size: 1.4em; /* کاهش بیشتر برای موبایل */  
-        padding-bottom: 50%; /* کاهش فاصله پایین */  
-
-    }  
+   
 }
 @media (max-width: 500px) {
   .shop-header h1 {
@@ -129,13 +125,7 @@
     overflow-wrap: break-word; /* شکستن متن در صورت نیاز */
   }
 
-  .shop-features h2,
-  .shop-experience h2 {
-    font-size: 1.2em;
-    padding-bottom: 20px; /* مقدار منطقی‌تر برای فاصله پایین */
-    text-align: center;
-    overflow-wrap: break-word;
-  }
+ 
   .shop-header {
     padding: 10px;
   }
@@ -154,16 +144,6 @@
     padding: 0 12px;
     text-align: center;
     overflow-wrap: break-word;
-  }
-
-  .shop-info h2,
-  .shop-features h2,
-  .shop-experience h2 {
-    font-size: 1.2em;
-    padding-bottom: 20px;
-    overflow-wrap: break-word;
-    padding-bottom: 90%; /* کاهش فاصله پایین */  
-
   }
  
 }

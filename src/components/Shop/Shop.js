@@ -29,6 +29,8 @@ const Shop = () => {
         {/* بخش معرفی محصولات | Product categories section */}
         <section className="shop-info">  
           <ul>  
+               <div className="tit">محصولات</div>
+
             <li>
               <Link to="/desktop">
                 <strong>مانیتورها:</strong> انواع مانیتورهای LED، LCD با کیفیت تصویر فوق‌العاده و طراحی‌های مدرن.
@@ -54,8 +56,8 @@ const Shop = () => {
 
         {/* بخش ویژگی‌های فروشگاه | Shop features section */}
         <section className="shop-features">  
-          <h2>ویژگی‌ها</h2>  
           <ul>  
+             <div className="tit">ویژگی‌ها</div>
             <li>خدمات مشاوره رایگان برای انتخاب بهترین محصول.</li>  
             <li>ارسال سریع و مطمئن در کل کشور.</li>  
             <li>گارانتی و خدمات پس از فروش عالی.</li>  
@@ -65,7 +67,7 @@ const Shop = () => {
 
         {/* بخش تجربه خرید | Shopping experience section */}
         <section className="shop-experience">  
-          <h2>خریدی مطمئن</h2>  
+             <div className="tit">ویژگی‌ها</div>
           <p>  
             ما در تکنو دیجیتال, به شما تجربه خریدی مطمئن و لذت‌بخش را ارائه می‌دهیم.   
             تمامی محصولات ما با ضمانت کیفیت ارائه می‌شوند و تیم پشتیبانی ما آماده پاسخگویی به سوالات و مشکلات شماست.   

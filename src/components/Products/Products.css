@@ -5,7 +5,13 @@
   align-items: center; /* اضافه کردن برای مرکز کردن عمودی محتوا */
   gap: 20px; /* فاصله بین آیکون‌ها */
   padding-top: 20px;
-  background: linear-gradient(to right, #f2ad8a, #e3e3e3);}
+  background: linear-gradient(to right, #f2ad8a, #e3e3e3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;  
+}
 
 .basket-icon {
   font-size: 40px;
